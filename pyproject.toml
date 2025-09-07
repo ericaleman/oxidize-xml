@@ -1,0 +1,41 @@
+[project]
+name = "oxidize-xml"
+version = "0.1.0"
+description = "High-performance XML to JSON streaming parser built with Rust"
+authors = [
+    {name = "Eric Aleman"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["xml", "json", "parser", "rust", "performance", "streaming"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Rust",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup :: XML",
+]
+
+[project.urls]
+Repository = "https://github.com/ericaleman/oxidize-xml"
+
+[tool.maturin]
+module-name = "oxidize_xml"
+manifest-path = "oxidize-xml/Cargo.toml"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-benchmark = "^5.1.0"
+psutil = "^7.0.0"
+pytest-cov = "^6.2.1"
+pytest-mock = "^3.14.1"
+
+[build-system]
+requires = ["maturin>=1.9.3"]
+build-backend = "maturin"

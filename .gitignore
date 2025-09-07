@@ -1,0 +1,43 @@
+# Rust build artifacts
+target/
+oxidize/target/
+
+# Python compiled extensions  
+*.so
+*.pyd
+*.dll
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.py[oc]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Build artifacts
+build/
+dist/
+wheels/
+
+# Virtual environments
+.venv
+venv/
+env/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PyPI credentials
+.pypirc

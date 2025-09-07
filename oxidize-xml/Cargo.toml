@@ -1,0 +1,15 @@
+[package]
+name = "oxidize_xml"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "oxidize_xml"
+crate-type = ["cdylib"]
+
+[dependencies]
+quick-xml = "0.31"
+serde_json = "1.0"
+indexmap = "2.1"
+pyo3 = { version = "0.25", features = ["extension-module"] }
+rayon = "1.8"
