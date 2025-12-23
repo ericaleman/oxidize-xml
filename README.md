@@ -73,6 +73,7 @@ result = oxidize_xml.parse_xml_string_to_json_file(xml_content, "book")
   "title": ["Harry Potter"]
 }
 ```
+This is a defensive feature for cases where WSDL doesn't exist or is untrustworthy, and has no real compute or complexity cost with Polars/DuckDB.
 
 **Key behaviors:**
 - **Attributes**: Prefixed with `@` to avoid conflicts with element names
